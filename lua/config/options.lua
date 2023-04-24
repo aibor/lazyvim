@@ -10,6 +10,7 @@ opt.errorbells = false
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
 opt.colorcolumn = "80,120"
+opt.spell = true
 opt.spelllang = "en_us"
 opt.wrap = true
 opt.autoread = true

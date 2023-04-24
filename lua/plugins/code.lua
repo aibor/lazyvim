@@ -5,7 +5,6 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
         clangd = {},
         jsonls = {
           mason = false,
@@ -24,6 +23,17 @@ return {
           },
         },
       },
+      setup = {
+        clangd = function(_, opts)
+          opts.cmd = {
+            "clangd",
+            "--background-index",
+            "--clang-tidy",
+            "--header-insertion",
+            "never",
+          }
+        end,
+      },
     },
   },
 
@@ -31,6 +41,7 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "clangd",
         "clang-format",
         "gopls",
         "stylua",

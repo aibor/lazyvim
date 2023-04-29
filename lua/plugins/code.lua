@@ -43,6 +43,7 @@ return {
       ensure_installed = {
         "clangd",
         "clang-format",
+        "go-debug-adapter",
         "gopls",
         "stylua",
         "shellcheck",

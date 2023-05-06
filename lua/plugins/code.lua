@@ -45,6 +45,8 @@ return {
         "clang-format",
         "go-debug-adapter",
         "gopls",
+        "rust-analyzer",
+        "rustfmt",
         "stylua",
         "shellcheck",
         "shfmt",

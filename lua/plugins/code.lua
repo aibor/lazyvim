@@ -22,6 +22,21 @@ return {
             },
           },
         },
+        pylsp = {
+          settings = {
+            pylsp = {
+              plugins = {
+                -- linter
+                flake8 = { enabled = true },
+                pycodestyle = { enabled = false },
+                -- type checker
+                pylsp_mypy = { enabled = true },
+                -- auto-completion options
+                jedi_completion = { fuzzy = true },
+              },
+            },
+          },
+        },
       },
       setup = {
         clangd = function(_, opts)

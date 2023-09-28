@@ -61,7 +61,6 @@ return {
         "go-debug-adapter",
         "gopls",
         "rust-analyzer",
-        "rustfmt",
         "stylua",
         "shellcheck",
         "shfmt",

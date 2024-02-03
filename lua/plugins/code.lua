@@ -53,6 +53,19 @@ return {
   },
 
   {
+    "stevearc/conform.nvim",
+    ---@class ConformOpts
+    opts = {
+      ---@type table<string, conform.FormatterConfigOverride|fun(bufnr: integer): nil|conform.FormatterConfigOverride>
+      formatters = {
+        shfmt = {
+          prepend_args = { "-i", "2", "-ci" },
+        },
+      },
+    },
+  },
+
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {

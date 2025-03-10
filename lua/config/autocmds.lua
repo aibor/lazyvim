@@ -60,3 +60,11 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "Jenkinsfile",
   command = "set ft=groovy",
 })
+
+-- Disable autoformat for python files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "python" },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})

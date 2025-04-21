@@ -71,6 +71,11 @@ return {
       ensure_installed = {
         "clangd",
         "clang-format",
+        "delve",
+        "gci",
+        "gofumpt",
+        "goimports",
+        "golines",
         "go-debug-adapter",
         "gopls",
         "rust-analyzer",

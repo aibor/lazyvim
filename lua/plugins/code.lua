@@ -37,6 +37,12 @@ return {
             },
           },
         },
+        tinymist = {
+          settings = {
+            formatterMode = "typstyle",
+            formatterPrintWidth = 80,
+          },
+        },
       },
       setup = {
         clangd = function(_, opts)
@@ -82,6 +88,8 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
+        "tinymist",
+        "typstyle",
         "flake8",
       },
     },

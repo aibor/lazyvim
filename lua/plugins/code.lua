@@ -37,6 +37,24 @@ return {
             },
           },
         },
+        rust_analyzer = {
+          settings = {
+            ["rust-analyzer"] = {
+              diagnostics = { enable = true },
+              checkOnSave = true,
+              check = {
+                enable = true,
+                command = "clippy",
+                extraArgs = { "--", "-Dwarnings" },
+                features = "all",
+              },
+              cargo = {
+                buildScripts = { enable = true },
+              },
+              procMacro = { enable = true },
+            },
+          },
+        },
         tinymist = {
           settings = {
             formatterMode = "typstyle",
@@ -72,7 +90,7 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "clangd",

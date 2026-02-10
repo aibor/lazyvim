@@ -116,7 +116,7 @@ return {
               },
               schema = {
                 model = {
-                  default = "gpt-oss:120b",
+                  default = "devstral:latest",
                 },
               },
             })

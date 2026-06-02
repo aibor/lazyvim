@@ -1,3 +1,8 @@
+-- Disable for now.
+if true then
+  return {}
+end
+
 local codecompanion_default_adapter = vim.env.OPENWEBUI_URL and "openwebui" or "mistral"
 local codecompanion_api_key_cached = ""
 
